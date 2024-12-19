@@ -1,0 +1,15 @@
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\component\WaterPump.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\exception\CoffeeTypeCupDifferentOfCoffeeTypeTankException.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\MainEspresso.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\exception\CannotMakeCremaWithSimpleCoffeeMachine.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\component\BeanTank.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\component\WaterTank.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\component\CoffeeGrinder.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\exception\LackOfWaterInTankException.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\component\Tank.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\EspressoCoffeeMachine.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\CoffeeMachine.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\MainCoffee.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\component\SteamPipe.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\exception\MachineNotPluggedException.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\main\java\fr\imt\coffee\machine\component\ElectricalResistance.java
