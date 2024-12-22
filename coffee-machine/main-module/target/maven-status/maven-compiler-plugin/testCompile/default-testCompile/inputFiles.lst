@@ -1,5 +1,11 @@
 C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\CoffeeMachineCucumberFunctionalTest.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\component\CoffeeGrinderTest.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\component\TankTest.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\component\BeanTankTest.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\EspressoCoffeeMachineTest.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\component\SteamPipeTest.java
 C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\CoffeeMachineUnitTest.java
 C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\cucumber\steps\CucumberStepsCoffeeMachineMakeACoffeeTest.java
 C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\component\ElectricalResistanceTest.java
+C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\component\WaterPumpTest.java
 C:\Users\amaur\Desktop\Cours EMA\2IA\S9\qualite\cours-qualite-2024-1\coffee-machine\main-module\src\test\java\fr\imt\coffee\machine\cucumber\steps\CucumberStepsExpressoCoffeeMachineTest.java
