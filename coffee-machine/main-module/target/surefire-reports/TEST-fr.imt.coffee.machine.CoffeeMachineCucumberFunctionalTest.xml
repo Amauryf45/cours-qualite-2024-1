@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="fr.imt.coffee.machine.component.TankTest" time="0.012" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="fr.imt.coffee.machine.CoffeeMachineCucumberFunctionalTest" time="26.546" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -58,6 +58,28 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testIncreaseVolumeInTankWithJUnit" classname="fr.imt.coffee.machine.component.TankTest" time="0.009"/>
-  <testcase name="testIncreaseVolumeInTankWithHamcrest" classname="fr.imt.coffee.machine.component.TankTest" time="0.001"/>
+  <testcase name="A user plug the coffee machine and make a coffee Arabica" classname="Make a coffee with a complete coffee machine" time="17.1">
+    <system-out><![CDATA[23:58:02.234 [main] INFO  fr.imt.coffee.machine.component.ElectricalResistance - Water heating time : 9065.0
+23:58:02.236 [main] INFO  fr.imt.coffee.machine.component.ElectricalResistance - Water heating...
+23:58:11.310 [main] INFO  fr.imt.coffee.machine.component.ElectricalResistance - Water heating OK
+23:58:11.310 [main] INFO  fr.imt.coffee.machine.component.WaterPump - Pumping time : 3000.0
+23:58:11.310 [main] INFO  fr.imt.coffee.machine.component.WaterPump - Pumping...
+23:58:14.322 [main] INFO  fr.imt.coffee.machine.component.WaterPump - Pumping OK
+23:58:14.322 [main] INFO  fr.imt.coffee.machine.component.CoffeeGrinder - Grinding time : 2000
+23:58:14.322 [main] INFO  fr.imt.coffee.machine.component.CoffeeGrinder - Grinding...
+23:58:16.329 [main] INFO  fr.imt.coffee.machine.component.CoffeeGrinder - Grinding OK
+]]></system-out>
+  </testcase>
+  <testcase name="A user plug the coffee machine and make a coffee" classname="Make a coffee with a complete coffee machine" time="9.283">
+    <system-out><![CDATA[23:58:16.392 [main] INFO  fr.imt.coffee.machine.component.ElectricalResistance - Water heating time : 5439.0
+23:58:16.392 [main] INFO  fr.imt.coffee.machine.component.ElectricalResistance - Water heating...
+23:58:21.834 [main] INFO  fr.imt.coffee.machine.component.ElectricalResistance - Water heating OK
+23:58:21.834 [main] INFO  fr.imt.coffee.machine.component.WaterPump - Pumping time : 1800.0
+23:58:21.834 [main] INFO  fr.imt.coffee.machine.component.WaterPump - Pumping...
+23:58:23.639 [main] INFO  fr.imt.coffee.machine.component.WaterPump - Pumping OK
+23:58:23.639 [main] INFO  fr.imt.coffee.machine.component.CoffeeGrinder - Grinding time : 2000
+23:58:23.639 [main] INFO  fr.imt.coffee.machine.component.CoffeeGrinder - Grinding...
+23:58:25.644 [main] INFO  fr.imt.coffee.machine.component.CoffeeGrinder - Grinding OK
+]]></system-out>
+  </testcase>
 </testsuite>
