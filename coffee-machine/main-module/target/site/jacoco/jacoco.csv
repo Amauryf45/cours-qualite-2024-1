@@ -1,6 +1,6 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-main-module,fr.imt.coffee.machine,EspressoCoffeeMachine,19,112,6,12,4,22,6,5,0,2
-main-module,fr.imt.coffee.machine,CoffeeMachine,39,217,2,16,12,54,7,23,5,16
+main-module,fr.imt.coffee.machine,EspressoCoffeeMachine,12,117,4,14,3,22,4,7,0,2
+main-module,fr.imt.coffee.machine,CoffeeMachine,39,215,2,16,12,53,7,23,5,16
 main-module,fr.imt.coffee,MainEspresso,103,0,0,0,32,0,3,0,3,0
 main-module,fr.imt.coffee,MainCoffee,109,0,0,0,34,0,3,0,3,0
 main-module,fr.imt.coffee.machine.component,BeanTank,4,19,0,0,2,7,1,3,1,3

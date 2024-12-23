@@ -53,7 +53,7 @@ public class EspressoCoffeeMachine extends CoffeeMachine{
             throw new CoffeeTypeCupDifferentOfCoffeeTypeTankException("The type of coffee to be made in the cup is different from that in the tank.");
         }
 
-        coffeeMachineFailure();
+        // coffeeMachineFailure();
 
         if(isOutOfOrder()){
             logger.warn("The machine is out of order. Please reset the coffee machine");

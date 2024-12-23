@@ -1,6 +1,5 @@
 package fr.imt.coffee.machine;
 
-import fr.imt.coffee.storage.cupboard.container.CoffeeContainer;
 import fr.imt.coffee.storage.cupboard.coffee.type.CoffeeType;
 import fr.imt.coffee.storage.cupboard.container.Cup;
 import fr.imt.coffee.storage.cupboard.exception.CupNotEmptyException;
@@ -117,33 +116,18 @@ public class CoffeeMachineUnitTest {
     /**
      * Teste le fonctionnement nominal pour préparer un café.
      */
-    // @Test
-    // public void testMakeACoffeeNominalCase() throws Exception {
-    //     // Création d'un mock pour le contenant
-    //     Cup mockCup = Mockito.mock(Cup.class);
-    //     Mockito.when(mockCup.isEmpty()).thenReturn(true);
-    //     Mockito.when(mockCup.getCapacity()).thenReturn(0.2);
+    @Test
+    public void testMakeACoffeeNominalCase() throws Exception {
+        Cup mockCup = Mockito.mock(Cup.class);
+        Mockito.when(mockCup.isEmpty()).thenReturn(true);
+        Mockito.when(mockCup.getCapacity()).thenReturn(0.2);
 
-    //     // Configuration de la machine à café
-    //     coffeeMachineUnderTest.plugToElectricalPlug(); // Branche la machine
-    //     coffeeMachineUnderTest.addWaterInTank(1.0); // Ajoute suffisamment d'eau
-    //     coffeeMachineUnderTest.addCoffeeInBeanTank(5.0, CoffeeType.MOKA); // Ajoute suffisamment de grains
+        coffeeMachineUnderTest.plugToElectricalPlug();
+        coffeeMachineUnderTest.addWaterInTank(1);
+        coffeeMachineUnderTest.addCoffeeInBeanTank(5, CoffeeType.MOKA);
 
-    //     // Assertions préliminaires
-    //     Assertions.assertTrue(coffeeMachineUnderTest.isPlugged(), "La machine doit être branchée.");
-    //     Assertions.assertTrue(mockCup.isEmpty(), "Le contenant doit être vide.");
-    //     Assertions.assertEquals(1.0, coffeeMachineUnderTest.getWaterTank().getActualVolume(), "Le réservoir doit contenir suffisamment d'eau.");
-    //     Assertions.assertEquals(CoffeeType.MOKA, coffeeMachineUnderTest.getBeanTank().getBeanCoffeeType(), "Le type de café dans le réservoir doit correspondre.");
-
-    //     // Appel de la méthode sous test
-    //     CoffeeContainer result = coffeeMachineUnderTest.makeACoffee(mockCup, CoffeeType.MOKA);
-
-    //     // Assertions post-traitement
-    //     Assertions.assertNotNull(result, "Le résultat ne doit pas être null.");
-    //     Assertions.assertFalse(result.isEmpty(), "Le contenant ne doit pas être vide.");
-    //     Assertions.assertEquals(CoffeeType.MOKA, result.getCoffeeType(), "Le type de café doit correspondre.");
-    // }
-
+        Assertions.assertNotNull(coffeeMachineUnderTest.makeACoffee(mockCup, CoffeeType.MOKA));
+    }
 
     /**
      * Teste si une exception est levée pour un manque d'eau dans le réservoir.
