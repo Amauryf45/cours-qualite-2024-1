@@ -41,6 +41,11 @@ public class CucumberStepsExpressoCoffeeMachineTest {
             cup = new Cup(containerCapacity);
     }
 
+    @When("I plug the espresso machine to electricity")
+    public void iPlugTheEspressoMachineToElectricity() {
+        espressoMachine.plugToElectricalPlug();
+    }
+
     @And("I add {double} liter of water to the espresso machine tank")
     public void iAddLitersOfWaterEspresso(double waterVolume) {
         espressoMachine.addWaterInTank(waterVolume);
