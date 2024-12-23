@@ -96,4 +96,41 @@ public class CucumberStepsCoffeeMachineMakeACoffeeTest {
     }
 
 
+
+    // @When("I try to make a coffee {string}")
+    // public void iTryToMakeACoffee(String coffeeType) {
+    //     Assertions.assertThrows(MachineNotPluggedException.class, () -> {
+    //         if (mug != null)
+    //             containerWithCoffee = coffeeMachine.makeACoffee(mug, CoffeeType.valueOf(coffeeType));
+    //         if (cup != null)
+    //             containerWithCoffee = coffeeMachine.makeACoffee(cup, CoffeeType.valueOf(coffeeType));
+    //     });
+    // }
+
+    // @Then("an exception {string} is thrown")
+    // public void anExceptionIsThrown(String exceptionName) {
+    //     Assertions.assertTrue(true, "The exception " + exceptionName + " was expected and thrown.");
+    // }
+
+
+    // @Then("an exception {string} is thrown")
+    // public void anExceptionIsThrown(String exceptionName) {
+    //     Assertions.assertThrows(Exception.class, () -> {
+    //         throw new LackOfWaterInTankException("You must add more water in the water tank.");
+    //     });
+    // }
+
+
+    // @And("I try to make a coffee {string}")
+    // public void iTryToMakeACoffee(String coffeeType) {
+    //     Assertions.assertThrows(CoffeeTypeCupDifferentOfCoffeeTypeTankException.class, () -> {
+    //         if (mug != null)
+    //             containerWithCoffee = coffeeMachine.makeACoffee(mug, CoffeeType.valueOf(coffeeType));
+    //         if (cup != null)
+    //             containerWithCoffee = coffeeMachine.makeACoffee(cup, CoffeeType.valueOf(coffeeType));
+    //     });
+    // }
 }
+
+
+
