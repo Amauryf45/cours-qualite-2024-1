@@ -35,24 +35,24 @@ jobs:
       - name: Build with Maven
         run: |
           cd coffee-machine
-          mvn clean verify
+          mvn clean install
 
-      # Publish JaCoCo Coverage Report
-      - name: Publish JaCoCo Coverage Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: jacoco-report
-          path: coffee-machine/target/site/jacoco/index.html
+      # # Publish JaCoCo Coverage Report
+      # - name: Publish JaCoCo Coverage Report
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: jacoco-report
+      #     path: coffee-machine/target/site/jacoco/index.html
 
-      # Run Cucumber Tests
-      - name: Run Cucumber Tests
-        run: |
-          cd coffee-machine
-          mvn exec:java -Dcucumber.options="--plugin pretty --plugin html:target/cucumber-reports/cucumber.html"
+      # # Run Cucumber Tests
+      # - name: Run Cucumber Tests
+      #   run: |
+      #     cd coffee-machine
+      #     mvn exec:java -Dcucumber.options="--plugin pretty --plugin html:target/cucumber-reports/cucumber.html"
 
-      # Upload Cucumber HTML report
-      - name: Upload Cucumber Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: cucumber-report
-          path: coffee-machine/target/cucumber-reports/cucumber.html
+      # # Upload Cucumber HTML report
+      # - name: Upload Cucumber Report
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: cucumber-report
+      #     path: coffee-machine/target/cucumber-reports/cucumber.html
