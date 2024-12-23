@@ -31,26 +31,28 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-m2
 
-      # Install dependencies and run tests with JaCoCo
+      # Navigate to coffee-machine directory and build with Maven
       - name: Build with Maven
-        run: mvn clean verify
+        run: |
+          cd coffee-machine
+          mvn clean verify
 
-      # Upload JaCoCo report (optional)
+      # Publish JaCoCo Coverage Report
       - name: Publish JaCoCo Coverage Report
         uses: actions/upload-artifact@v3
         with:
           name: jacoco-report
-          path: target/site/jacoco/index.html
+          path: coffee-machine/target/site/jacoco/index.html
 
-      # Run Cucumber tests
+      # Run Cucumber Tests
       - name: Run Cucumber Tests
         run: |
-          mvn test
+          cd coffee-machine
           mvn exec:java -Dcucumber.options="--plugin pretty --plugin html:target/cucumber-reports/cucumber.html"
 
-      # Upload Cucumber HTML report (optional)
+      # Upload Cucumber HTML report
       - name: Upload Cucumber Report
         uses: actions/upload-artifact@v3
         with:
           name: cucumber-report
-          path: target/cucumber-reports/cucumber.html
+          path: coffee-machine/target/cucumber-reports/cucumber.html
