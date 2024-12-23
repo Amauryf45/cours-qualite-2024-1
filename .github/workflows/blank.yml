@@ -1,14 +1,56 @@
-name: Github Action Example
+name: Build and Test with Cucumber and JaCoCo
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: Run a one-line script
-        run: echo Hello, world!
+    steps:
+      # Check out the code from the repository
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Set up JDK 17
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: "temurin" # You can use 'zulu' or 'adopt' as well
+          java-version: "17"
+
+      # Cache Maven dependencies
+      - name: Cache Maven dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-m2
+
+      # Install dependencies and run tests with JaCoCo
+      - name: Build with Maven
+        run: mvn clean verify
+
+      # Upload JaCoCo report (optional)
+      - name: Publish JaCoCo Coverage Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: jacoco-report
+          path: target/site/jacoco/index.html
+
+      # Run Cucumber tests
+      - name: Run Cucumber Tests
+        run: |
+          mvn test
+          mvn exec:java -Dcucumber.options="--plugin pretty --plugin html:target/cucumber-reports/cucumber.html"
+
+      # Upload Cucumber HTML report (optional)
+      - name: Upload Cucumber Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-report
+          path: target/cucumber-reports/cucumber.html
